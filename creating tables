@@ -1,0 +1,21 @@
+CREATE TABLE author(
+     id SERIAL PRIMARY KEY,
+     firstname VARCHAR(50) NOT NULL,
+	 lastname VARCHAR(50) NOT NULL,
+	 email VARCHAR(100),
+	 birtday DATE
+);
+
+
+INSERT INTO author (firstname,lastname,email,birtday)
+VALUES
+   ('Haruki','Murakami','haruki@murakami.com','1948-11-07'),
+   ('Sabahattin','Ali','sabahattin@ali.com','1914-07-11'),
+   ('Orhan','Pamuk','orhan@pamuk.com','1950-04-14'),
+   ('Halide Edip','Adıvar','halideedip@adivar.com','1884-07-11'),
+   ('Zygmunt','Bauman','zygmunt@bauman.com','1911-07-12');
+   
+   
+   SELECT * FROM author;
+   
+
